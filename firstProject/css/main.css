@@ -1,0 +1,47 @@
+a {
+  text-decoration: none;
+  color: #6ab47b;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#logo {
+ text-align: center;
+ margin: 0;
+}
+
+/*green header*/
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+/*logo text*/
+h1, h2 {
+  color: #fff;
+}
+
+/*nav-background mobile*/
+nav {
+  background: #599a68;
+}
+
+/*nav-link color*/
+nav a, nav a:visited {
+   color: #fff;
+}
+
+/* nav-link selected color */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+/*  site- body */
+body {
+  background-color: #fff;
+  color: #999;
+}
