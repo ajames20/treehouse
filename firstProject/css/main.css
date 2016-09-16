@@ -1,17 +1,79 @@
-a {
-  text-decoration: none;
-  color: #6ab47b;
-}
+/****************************************
+GENERAL
+****************************************/
 
+
+body {
+  font-family: "Open-sans", sans-serif;
+}
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
+a {
+  text-decoration: none;
+}
+
+
+
+
+/****************************************
+HEADING
+****************************************/
+
+/* site body */
 #logo {
  text-align: center;
  margin: 0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+/****************************************
+NAVIGATION
+****************************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+
+/****************************************
+FOOTER
+****************************************/
+
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+
+/****************************************
+COLORS
+****************************************/
+
+body {
+  background-color: #fff;
+  color: #999;
 }
 
 /*green header*/
@@ -23,6 +85,9 @@ header {
 /*logo text*/
 h1, h2 {
   color: #fff;
+}
+a {
+  color: #6ab47b;
 }
 
 /*nav-background mobile*/
@@ -38,10 +103,4 @@ nav a, nav a:visited {
 /* nav-link selected color */
 nav a.selected, nav a:hover {
   color: #32673f;
-}
-
-/*  site- body */
-body {
-  background-color: #fff;
-  color: #999;
 }
