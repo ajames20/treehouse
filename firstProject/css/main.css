@@ -96,8 +96,8 @@ footer {
 }
 
 .social {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   padding: 0 5px;
 }
 
@@ -168,7 +168,16 @@ PAGE: CONTACT
   background-image: url('../img/mail.png')
 }
 .contact-info li.github a {
-  background-image: url('../img/github')
+  background-image: url('../img/github.png')
+}
+/***************************************
+FOOTER PADDING-TOP ON DIFFERNT LAYOUTS
+***************************************/
+.footerabout{
+  padding-top: 140px;
+}
+.footercontact{
+  padding-top: 200px;
 }
 /****************************************
 COLORS

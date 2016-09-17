@@ -24,6 +24,13 @@
     float: left;
     margin: 0 5% 80px 0;
   }
+
+  .footerabout{
+    padding-top: 150px;
+  }
+  .footercontact{
+    padding-top: 240px;
+  }
 }
 
 
@@ -58,5 +65,11 @@
   header {
     border-bottom: 5px solid #599a68;
     margin-bottom: 60px;
+  }
+  .footerabout{
+    padding-top: 150px;
+  }
+  .footercontact{
+    padding-top: 240px;
   }
 }
