@@ -1,5 +1,5 @@
 /* =================================
-  Base Styles
+  Base Element Styles
 ==================================== */
 
 * {
@@ -14,7 +14,7 @@ body {
 
 p {
 	font-size: .95em;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.8em;
 }
 
 h2,
@@ -24,12 +24,47 @@ a {
 }
 
 h2,
-h3 {
+h3,
+h4 {
 	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: .4em;
 }
 
 a {
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+.icon-location {
+  width: 25px;
+
+  position: absolute;
+  top: -15px;
+  right: -10px;
+
+  }
+figure {
+	margin: 0;
+	line-height: 0;
+  position: relative;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;
+	background: rgba(19,43,102, .85);
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
 }
 
 /* =================================
@@ -40,93 +75,139 @@ a {
 
 .name {
 	font-size: 1.25em;
+	margin: 0;
 }
 
-.name,
-.main-nav li {
-	text-align: center;
-	background: #fff;
-	margin-top: 6px;
-	margin-bottom: 6px;
+.main-nav {
+	margin-top: 5px;
 }
 
-.main-nav a {
-	font-size: .95em;
-	color: #3acec2;
-	text-transform: uppercase;
-}
+	.name a,
+	.main-nav a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+	}
 
-.main-nav a:hover {
-	color: #093a58;
-}
 
-.name a,
-.main-nav a {
-	padding: 10px 15px;
-	display: block;
-}
+	.main-nav a {
+		font-size: .95em;
+		color: #3acec2;
+		text-transform: uppercase;
+	}
+
+	.main-nav a:hover {
+		color: #093a58;
+	}
 
 /* ---- Layout Containers ---- */
 
-.container {
-	padding-left: 1em;
-	padding-right: 1em;
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
 
-.main-header {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	color: #fff;
 	background: #3acec2;
-	margin-bottom: 30px;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .main-footer {
-	text-align: center;
-	padding: 2em 0;
 	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
 }
 
+/* ---- Page Elements ---- */
 
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
 
 /* =================================
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
-
-	.wrap {
-		min-height: calc(100vh - 89px);
-	}
-
+  .main-header {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  body {
+  padding-top: 68px;
+  }
 	.container {
-		width: 80%;
-		max-width: 1150px;
+		width: 90%;
 		margin: 0 auto;
 	}
 
 	.name,
-	.main-nav,
+	.col {
+		float: left;
+	}
+
+	.primary,
+	.secondary {
+		width: 50%;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
 	.main-nav li {
 		display: inline-block;
+		margin-left: 15px;
 	}
 
-	.name {
-		width: 240px;
-		margin-right: 50px;
+	.tagline {
+		font-size: 1.4em;
 	}
 
-	.main-nav li {
-		margin-right: 12px;
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
 	}
 
-  .col {
-    width: 50%;
-    display: inline-block;
-    margin-right: -4px;
-    vertical-align: top;
-    padding-left: 1em;
-    padding-right: 1em;
-    background-color: lightgrey;
-  }
+}
+
+@media (min-width: 1025px) {
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+	.secondary,
+	.tertiary {
+		width: 30%;
+	}
 
 }
