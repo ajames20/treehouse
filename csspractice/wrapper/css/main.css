@@ -18,6 +18,10 @@ a
     text-decoration: none;
     color: #fff;
 }
+h1 {
+  font-weight: 100;
+  font-size: 2.5em;
+}
 
 /* =================================
   Base Layout Styles
@@ -27,13 +31,34 @@ a
 .name
 {
     margin: 0;
+    display: inline-block;
+    text-align: center;
 }
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: #1d4696;
+	text-transform: uppercase;
+  padding: 5px 8px;
+  display: block;
+  padding: .5em 2em;
+}
+
+.main-nav a:hover {
+	color: #bcbcbc;
+}
+
 /* ---- Layout Containers ---- */
 
 .main-header
 {
     padding: 1em 0;
-    /*background: #1d4696;*/
+    background: #1d4696;
     background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -57,8 +82,15 @@ a
     padding-left: 1em;
     font-family: 'Roboto', sans-serif;
 }
+.col {
+  margin: 2em 0;
+}
 
-
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* ---- Page Elements ---- */
 
 /* =================================
@@ -75,5 +107,27 @@ a
     }
     .main-header {
       height: 450px;
+      margin-left: -100px;
+    }
+    .main-nav {
+      margin-right: -100px;
+      float: right;
+
+    }
+    .main-nav li{
+      float: right;
+      margin-right: 10px;
+      background-color: lightgrey;
+      border-radius: 4px;
+    }
+    .main-nav a:hover {
+    	color: #fff;
+    }
+    .col{
+      padding: 1em 1em;
+      margin-right: -4px;
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
     }
 }
