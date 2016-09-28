@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-size: 1.2em;
+}
+
+span {
+    color: #39ADD1;
+}
+
+.header, .nav, .wrapper, .footer {
+    display: flex;
+    padding: 1em;
+}
+
+.header {
+    background-color: #fff;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav, .footer {
+    list-style: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+.list {
+    padding: .8em 0;
+}
+
+.list a {
+    padding: .5em 0;
+}
+
+.list a:hover {
+    color: #39ADD1;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 72vh;
+		text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wrapper h2 {
+    margin-bottom: 1em;
+}
+
+.col h3 {
+    text-align: center;
+    margin-bottom: .6em;
+}
+
+.footer {
+    background-color: #3a3a3a;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer a {
+    padding: 0 .4em;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #39ADD1;
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav {
+        flex-direction: row;
+    }
+    .list {
+        padding: .2em 1em;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+
+		#left {
+			padding: 1em;
+			text-align: justify;
+		}
+		#right {
+			padding: 1em;
+			text-align: justify;
+		}
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 3em;
+    }
+    .footer a {
+        align-items: center;
+    }
+    .wrapper {
+			flex-direction: row;
+		}
+		#left {
+			padding: 1em;
+			text-align: justify;
+			/*background-color: red;*/
+		}
+		#right {
+			padding: 1em;
+			text-align: justify;
+			/*background-color: blue;*/
+		}
+}
