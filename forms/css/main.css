@@ -88,9 +88,14 @@ span {
 }
 
 
+
+
 /**********************
     FORM STYLING
 **********************/
+.form {
+  margin-bottom: 2em;
+}
 
 form {
   max-width: 300px;
@@ -208,4 +213,8 @@ button:hover {
       max-width: 900px;
       font-size: 1.4em;
     }
+    .inline {
+    width: auto;
+    display: inline-block;
+  }
 }
