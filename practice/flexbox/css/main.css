@@ -66,6 +66,11 @@ span {
 .wrapper h2 {
     margin-bottom: 1em;
 }
+#left p::first-line,
+#right p::first-line {
+  font-size: 1.3em;
+  font-weight: bold;
+}
 
 .col h3 {
     text-align: center;
@@ -109,6 +114,7 @@ span {
         flex-direction: column;
     }
 
+
 		#left {
 			padding: 1em;
 			text-align: justify;
@@ -117,6 +123,20 @@ span {
 			padding: 1em;
 			text-align: justify;
 		}
+    #left p::first-letter,
+    #right p::first-letter{
+      color: white;
+      background-color: #3a3a3a;
+      display: inline-block;
+      font-size: 2.5rem;
+      float: left;
+      border-radius: 5px;
+      clear: both;
+      padding: 1px 10px;
+      margin-top: 7px;
+      margin-right: 4px;
+    }
+
 }
 
 @media (min-width: 1025px) {
@@ -129,6 +149,11 @@ span {
     .wrapper {
 			flex-direction: row;
 		}
+
+    .main h2{
+      font-size: 2.6em;
+    }
+
 		#left {
 			padding: 1em;
 			text-align: justify;
@@ -139,4 +164,17 @@ span {
 			text-align: justify;
 			/*background-color: blue;*/
 		}
+    #left p::first-letter,
+    #right p::first-letter{
+      color: white;
+      background-color: #3a3a3a;
+      display: inline-block;
+      font-size: 2.5rem;
+      float: left;
+      border-radius: 5px;
+      clear: both;
+      padding: 1px 10px;
+      margin-top: 7px;
+      margin-right: 4px;
+    }
 }

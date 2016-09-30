@@ -209,6 +209,9 @@ button:hover {
 			text-align: justify;
 			/*background-color: blue;*/
 		}
+    h2 {
+      font-size: 1.75em;
+    }
     form {
       max-width: 900px;
       font-size: 1.4em;
