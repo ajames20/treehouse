@@ -26,6 +26,7 @@ span {
     padding: 1em;
 }
 
+
 .header {
     flex-direction: column;
     text-align: center;
@@ -39,7 +40,7 @@ span {
 }
 
 .list {
-    padding: .8em 0;
+    padding: .5em
 }
 
 .list a {
@@ -96,6 +97,21 @@ span {
 .footer a:hover {
     color: #39add1;
 }
+.selected {
+  border: 1px solid #39add1;
+  border-radius: 5px;
+}
+
+.wrapper2 {
+  display: flex;
+  flex-direction: column;;
+}
+
+.wrapper2 ul {
+  padding: 2em;
+  flex-wrap: wrap;
+  list-style: none;
+}
 
 
 
@@ -135,9 +151,11 @@ select {
   color: #8a97a0;
   margin-bottom: 30px;
 }
+
 input:focus,
 textarea:focus {
     background-color: #fff;
+    border: 1px solid #39add1;
 }
 
 button {
@@ -178,9 +196,7 @@ MEDIA QUERIES
     .nav {
         flex-direction: row;
     }
-    .list {
-        padding: .2em 1em;
-    }
+
     .wrapper {
         flex-direction: column;
     }
@@ -249,5 +265,20 @@ MEDIA QUERIES
     }
     textarea {
       height: 300px;
+    }
+    .wrapper2 ul {
+    	list-style:none;
+    	margin: 0 auto;
+    	padding: 0;
+    	display: block;
+    	max-width: 780px;
+    	text-align: center;
+    }
+
+    .wrapper2 ul li{
+      display: inline-block;
+      padding: 8px;
+      background:white;
+      margin:20px;
     }
 }
