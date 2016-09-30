@@ -135,6 +135,10 @@ select {
   color: #8a97a0;
   margin-bottom: 30px;
 }
+input:focus,
+textarea:focus {
+    background-color: #fff;
+}
 
 button {
   padding: 19px 39px 18px 39px;
@@ -149,6 +153,7 @@ button {
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -192,11 +197,11 @@ MEDIA QUERIES
         display: inline-block;
         float: left;
         clear: both;
-        margin-top: 7px;
+        margin-top: 3px;
         margin-right: 5px;
         padding: 1px 10px;
         color: white;
-        border-radius: 5px;
+        border-radius: 3px;
         background-color: #3a3a3a;
     }
     form {
@@ -232,11 +237,11 @@ MEDIA QUERIES
         display: inline-block;
         float: left;
         clear: both;
-        margin-top: 7px;
+        margin-top: 3px;
         margin-right: 5px;
         padding: 1px 10px;
         color: white;
-        border-radius: 5px;
+        border-radius: 3px;
         background-color: #3a3a3a;
     }
     form {
