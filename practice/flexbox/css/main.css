@@ -104,7 +104,7 @@ span {
 
 .wrapper2 {
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
 }
 
 .wrapper2 ul {
@@ -182,6 +182,7 @@ button:hover {
 /*****************
 PROJECTS PAGE JS AND JQUERY STYLE
 *****************/
+
 #overlay{
   background: rgba(0,0,0, 0.7);
   width: 100%;
@@ -190,6 +191,10 @@ PROJECTS PAGE JS AND JQUERY STYLE
   top: 0;
   left: 0;
   display: none;
+    text-align: center;
+}
+#overlay img {
+  margin-top: 10%;
 }
 
 
@@ -292,10 +297,9 @@ MEDIA QUERIES
     	text-align: center;
     }
 
-    .wrapper2 ul li{
+    .wrapper2 ul li {
       display: inline-block;
-      padding: 8px;
       background:white;
-      margin:20px;
+      margin: 1em;
     }
 }
