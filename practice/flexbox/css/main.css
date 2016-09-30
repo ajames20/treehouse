@@ -1,24 +1,24 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Varela Round', sans-serif;
     line-height: 1.6;
-    color: #3a3a3a;
     margin: 0;
+    color: #3a3a3a;
 }
 
 a {
+    font-size: 1.2em;
     text-decoration: none;
     color: #3a3a3a;
-    font-size: 1.2em;
 }
 
 span {
-    color: #39ADD1;
+    color: #39add1;
 }
 
 .header, .nav, .wrapper, .footer {
@@ -27,14 +27,14 @@ span {
 }
 
 .header {
-    background-color: #fff;
     flex-direction: column;
     text-align: center;
+    background-color: #fff;
 }
 
 .nav, .footer {
-    list-style: none;
     flex-direction: column;
+    list-style: none;
     text-align: center;
 }
 
@@ -47,14 +47,14 @@ span {
 }
 
 .list a:hover {
-    color: #39ADD1;
+    color: #39add1;
 }
 
 .main {
     width: 80%;
-    margin: 0 auto;
     min-height: 72vh;
-		text-align: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .wrapper {
@@ -66,22 +66,26 @@ span {
 .wrapper h2 {
     margin-bottom: 1em;
 }
-#left p::first-line,
-#right p::first-line {
-  font-size: 1.3em;
-  font-weight: bold;
+
+#left p::first-line, #right p::first-line {
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 .col h3 {
-    text-align: center;
     margin-bottom: .6em;
+    text-align: center;
 }
 
 .footer {
-    background-color: #3a3a3a;
     flex-direction: row;
-    justify-content: center;
+    color: #fff;
+    background-color: #3a3a3a;
+
     flex: 1;
+}
+.footer p {
+  flex: auto;
 }
 
 .footer a {
@@ -90,8 +94,70 @@ span {
 }
 
 .footer a:hover {
-    color: #39ADD1;
+    color: #39add1;
 }
+
+
+
+/**********************
+    FORM STYLING
+**********************/
+.form {
+  margin-bottom: 2em;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+.form h2 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #39ADD1;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #39ADD1;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  color: #3a3a3a;
+}
+
+/******************
+MEDIA QUERIES
+*******************/
 
 @media (min-width: 769px) {
     h1 {
@@ -113,30 +179,29 @@ span {
     .wrapper {
         flex-direction: column;
     }
-
-
-		#left {
-			padding: 1em;
-			text-align: justify;
-		}
-		#right {
-			padding: 1em;
-			text-align: justify;
-		}
-    #left p::first-letter,
-    #right p::first-letter{
-      color: white;
-      background-color: #3a3a3a;
-      display: inline-block;
-      font-size: 2.5rem;
-      float: left;
-      border-radius: 5px;
-      clear: both;
-      padding: 1px 10px;
-      margin-top: 7px;
-      margin-right: 4px;
+    #left {
+        padding: 1em;
+        text-align: justify;
     }
-
+    #right {
+        padding: 1em;
+        text-align: justify;
+    }
+    #left p::first-letter, #right p::first-letter {
+        font-size: 2.5rem;
+        display: inline-block;
+        float: left;
+        clear: both;
+        margin-top: 7px;
+        margin-right: 5px;
+        padding: 1px 10px;
+        color: white;
+        border-radius: 5px;
+        background-color: #3a3a3a;
+    }
+    form {
+      max-width: 480px;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -147,34 +212,37 @@ span {
         align-items: center;
     }
     .wrapper {
-			flex-direction: row;
-		}
-
-    .main h2{
-      font-size: 2.6em;
+        flex-direction: row;
     }
-
-		#left {
-			padding: 1em;
-			text-align: justify;
-			/*background-color: red;*/
-		}
-		#right {
-			padding: 1em;
-			text-align: justify;
-			/*background-color: blue;*/
-		}
-    #left p::first-letter,
-    #right p::first-letter{
-      color: white;
-      background-color: #3a3a3a;
-      display: inline-block;
-      font-size: 2.5rem;
-      float: left;
-      border-radius: 5px;
-      clear: both;
-      padding: 1px 10px;
-      margin-top: 7px;
-      margin-right: 4px;
+    .main h2 {
+        font-size: 2.6em;
+    }
+    #left {
+        padding: 1em;
+        text-align: justify;
+        /*background-color: red;*/
+    }
+    #right {
+        padding: 1em;
+        text-align: justify;
+        /*background-color: blue;*/
+    }
+    #left p::first-letter, #right p::first-letter {
+        font-size: 2.5rem;
+        display: inline-block;
+        float: left;
+        clear: both;
+        margin-top: 7px;
+        margin-right: 5px;
+        padding: 1px 10px;
+        color: white;
+        border-radius: 5px;
+        background-color: #3a3a3a;
+    }
+    form {
+      max-width: 680px;
+    }
+    textarea {
+      height: 300px;
     }
 }
