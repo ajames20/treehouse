@@ -1,8 +1,10 @@
-/*prevent link from openeing without stopping client from being able to open
- photo is js is off.*/
+//Add overlay to body
+var $overlay = $('<div id="overlay"></div>');
 
-$("#jsPractice a").click(function(event){
+$("body").append($overlay);
+
+$("#imageGallery a").click(function(event){
   event.preventDefault();
   var href = $(this).attr("href");
-  console.log(href);
+  $overlay.show();
 });
