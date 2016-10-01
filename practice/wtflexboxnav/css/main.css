@@ -93,8 +93,8 @@ a:hover{
   .flex-nav ul {
     display: none;
   }
-  /*.flex-nav ul {
+  .flex-nav ul.open{
     display: flex;
-  }*/
+  }
 
 }
