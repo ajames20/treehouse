@@ -33,6 +33,9 @@ a {
 a:hover {
   background:rgba(0,0,0,0.4);
 }
+.arrow a {
+  font-size: 32px;
+}
 
 /* our flex container */
 .slider-nav ul {
