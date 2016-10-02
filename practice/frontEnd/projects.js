@@ -70,12 +70,7 @@ $(".nav a").each(function (){
 //bind click to button
 // go to selects location
 
-
-var $button = $("<button>Go</button>");
-
-$(".nav").append($button);
-
-$button.click(function () {
-  window.location = $select.val();
+$select.change(function() {
+    window.location = $select.val();
 
 });
