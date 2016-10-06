@@ -24,14 +24,19 @@ input, button {
   outline: none;
 }
 button {
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  margin: 10px 0 0;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
+    background: none;
+    border: 0px;
+    color: #888;
+    border: 1px solid #888;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 60px;
+    margin: 10px 0 0;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+    margin-left: 3px;
+    display: inline-block;
+    width: 83%;
 }
 button:hover {
   color: #333;
@@ -55,7 +60,7 @@ input[type="text"] {
   padding: 10px;
   border: 1px solid #ddd;
   background: #fff;
-  border-radius: 6px;
+  border-radius: 4px;
   font-family: Lato, sans-serif;
   color: #888;
 }
@@ -73,7 +78,8 @@ input#new-task {
   width: 318px;
 }
 p > button:hover {
-  color: #0FC57C;
+  color: #fff;
+  background-color: #0FC57C;
 }
 
 /* Task list */
@@ -96,8 +102,12 @@ li > label {
 li >  input[type="text"] {
   width: 226px;
 }
+li > .delete {
+
+}
 li > .delete:hover {
-  color: #CF2323;
+  color: #fff;
+  background-color: #CF2323;
 }
 
 /* Completed */
@@ -118,6 +128,13 @@ ul li.editMode input[type=text] {
 ul li.editMode label {
   display:none;
 }
+
 .selected {
-  color: red;
+    color: #fff;
+    background-color: orange;
+    margin-left: 3px;
+}
+.selected:hover {
+  color: #fff;
+  background-color: orange;
 }

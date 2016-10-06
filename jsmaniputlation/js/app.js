@@ -8,6 +8,7 @@ var addButton = document.getElementsByTagName("button")[0]; //first button onpag
 var incompleteTaskHolder = document.getElementById("incomplete-tasks"); //#incomplete-tasks
 var completedTaskHolder = document.getElementById("completed-tasks"); //#completed-tasks
 
+
 //new task li item
 var createTaskListElement = function(taskString) {
     // create li item
@@ -66,23 +67,27 @@ var editTask = function() {
     var editInput = listItem.querySelector("input[type=text]");
     var label = listItem.querySelector("label");
     var contiansClass =  listItem.classList.contains("editMode");
+    var buttonToggle = listItem.querySelector("button");
+
+
     // if the class of the parent has class editMode
     if (contiansClass) {
-
       // swtih form editMode
       // label text becomes inputs value
       label.innerText = editInput.value;
-
     } else {
       // switch to editMode
       // input value becomes the labels text
       editInput.value = label.innerText;
     }
-  listItem.classList.toggle("editMode");
+  buttonToggle.classList.toggle("selected");  listItem.classList.toggle("editMode");
+
 
 };
 
 //toggle editMode
+
+
 
 
 
@@ -138,6 +143,8 @@ var addEvent = function() {
 
 
 //set the click handler to addButton function
+
+
 
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", addEvent);
