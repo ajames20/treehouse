@@ -106,8 +106,8 @@ li > .delete {
 
 }
 li > .delete:hover {
-  color: #fff;
-  background-color: #CF2323;
+  color: #CF2323;
+
 }
 
 /* Completed */
