@@ -1,5 +1,6 @@
 var Profile = require("./profile.js");
 var renderer = require("./renderer.js");
+var querystring = require("querystring");
 var commonHeader = {
     'Content-Type': 'text/html'
 };
@@ -17,11 +18,20 @@ function home(request, response) {
             renderer.view("footer", {}, response);
             response.end();
         } else {
-          
+            //if URL == "/" && POST
+            request.on("data", function(postBody) {
+                console.log(postBody.toString());
+                //get the post data from body
+                var query = querystring.parse(postBody.toString());
+                //extract the username
+                response.writeHead(303, {
+                    "Location": "/" + query.username
+                });
+                response.end();
+                //redirect to /:username
+            });
+
         }
-
-
-
     }
 }
 
