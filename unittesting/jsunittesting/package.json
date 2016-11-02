@@ -1,0 +1,19 @@
+{
+  "name": "jsunittesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main_test.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
